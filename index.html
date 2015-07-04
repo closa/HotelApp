@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>HotelApp</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href= "CSS/jquery.mobile-1.4.5.min.css" rel="stylesheet">        
+    </head>
+    
+    <dody>
+        <div data-role="page" id="home">
+            <div data-role="header"><h1>HotelApp</h1></div>
+            <div role="main" class="ui-content">
+                <ul data-role="listview" data-inset="true">
+                    <li><a href="#nr1">Nueva Reserva</a></li>
+                    <li><a href="#historial">Historial</a></li>
+                    <li><a href="#priv">Privacidad</a></li>
+                </ul>
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <span>Todos los derechos reservados</span>
+                <a href="#nosotros" data-transition="slideup">Nosotros</a> <!-- data-transition="slideup  esta propiedad hace que se desplique la info de notros sube y baja-->
+            </div>
+        </div>
+        
+        <div data-role="page" id="nosotros">
+            <div data-role="header">
+                <h1>Nosotros</h1>
+                <a href="#" data-rel="back" class="ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all">Atrás</a> <!--data-rel="back  es una propiedad para ir hacia atrás-->
+            </div>
+            <div role="main" class="ui-content">
+                <p>To make a list filterable, simply add the data-filter="true" attribute to the list. The          framework will then append a search box above the list and add the behavior to filter out list items that don't contain the current search string as the user types. The input's placeholder text defaults to "Filter items...". To configure the placeholder text in the search input, use the data-filter-placeholder attribute. By default the search box will inherit its theme from its parent. The search box theme can be configured using the data attribute data-filter-theme on your listview.</p>
+            </div>
+        </div>
+
+        <div data-role="page" id="priv">
+            <div data-role="header">
+                <h1>Privacidad</h1>
+                <a href="#" data-rel="back" class="ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all">Atrás</a> <!--data-rel="back  es una propiedad para ir hacia atrás-->
+            </div>
+            <div role="main" class="ui-content">
+                <p>To make a list filterable, simply add the data-filter="true" attribute to the list. The          framework will then append a search box above the list and add the behavior to filter out list items that don't contain the current search string as the user types. The input's placeholder text defaults to "Filter items...". To configure the placeholder text in the search input, use the data-filter-placeholder attribute. By default the search box will inherit its theme from its parent. The search box theme can be configured using the data attribute data-filter-theme on your listview.</p>
+            </div>
+        </div>
+        
+        <div data-role="page" id="reg">
+            <div data-role="header">
+                <h1>Registro</h1>
+            </div>
+            <div role="main" class="ui-content">
+                <ul data-role="listview">
+                    <li><input type="text" placeholder="nombre" id="regNom"></li>
+                    <li><input type="text" placeholder="Correo electrónico" id="regMail"></li>
+                    <li><input type="tel" placeholder="Teléfono" id="regTel"></li>
+                    <li><a href="#">Tomar foto</a></li>
+                    <li id="fotoTmada"></li>
+                </ul>  
+            </div>
+            <div data-rol="footer">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#" class="ui-btn-active">Registrar</a></li>
+                    </ul>
+                </div><!-- /navbar -->
+            
+            </div>
+        </div>
+        
+        <script src= "js/jquery.min.js"></script>  <!--Se carga al final del body para que cargue mas rapido -->
+        <script src= "js/jquery.mobile-1.4.5.min.js"></script>
+    </dody>
+
+</html>
